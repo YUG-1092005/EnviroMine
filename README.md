@@ -1,31 +1,37 @@
 # EnviroMine
 
-EnviroMine is a project aimed at leveraging technology to support sustainable mining practices. This repository contains the frontend code for the application.
+EnviroMine is a prototype aimed at leveraging technology to support sustainable mining practices. This project was developed as part of a hackathon to showcase innovative solutions for minimizing the environmental impact of mining operations.
 
 ## Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting-started)
+- [Overview](#overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
 - [Installation](#installation)
-- [Running the Project](#running-the-project)
-- [Build](#build)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Future Enhancements](#future-enhancements)
+- [Contributors](#contributors)
 
-## About
+## Overview
 
-EnviroMine is designed to help mining companies monitor and optimize their environmental impact. It features data visualization tools, interactive charts, and real-time monitoring to ensure sustainable practices.
+EnviroMine provides mining companies with tools to monitor their environmental impact through data visualization, real-time monitoring, and interactive charts. The prototype focuses on the core functionalities required to demonstrate its potential impact on promoting sustainable mining practices.
 
-## Getting Started
+## Features
 
-To get a local copy up and running, follow these steps.
+- **Real-Time Data Visualization**: Displays environmental data in real-time to monitor mining impact.
+- **Interactive Charts**: Allows users to interact with data visualizations to better understand trends and anomalies.
+- **Sustainability Insights**: Provides actionable insights based on data to promote sustainable practices.
 
-### Prerequisites
+## Technology Stack
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
+- **Frontend**: React, Vite, Chart.js, Swiper
+- **Styling**: Material-UI (MUI), Styled-Components, Emotion
+- **Icons**: FontAwesome
 
-### Installation
+## Installation
+
+To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
 
@@ -39,18 +45,15 @@ To get a local copy up and running, follow these steps.
     cd EnviroMine/Frontend
     ```
 
-3. **Install dependencies**:
+3. **Install the dependencies**:
 
     ```bash
     npm install
     ```
 
-## Running the Project
+## Usage
 
-To run the development server:
+To run the prototype locally and explore its features, use the following command:
 
 ```bash
 npm run dev
-
-4. **build**:
-npm run build
