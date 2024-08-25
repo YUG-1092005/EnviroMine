@@ -9,7 +9,6 @@ EnviroMine is a prototype aimed at leveraging technology to support sustainable 
 - [Technology Stack](#technology-stack)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Future Enhancements](#future-enhancements)
 - [Contributors](#contributors)
 
@@ -22,7 +21,8 @@ EnviroMine provides mining companies with tools to monitor their environmental i
 - **Real-Time Data Visualization**: Displays environmental data in real-time to monitor mining impact.
 - **Interactive Charts**: Allows users to interact with data visualizations to better understand trends and anomalies.
 - **Sustainability Insights**: Provides actionable insights based on data to promote sustainable practices.
-
+- **More Features**: coming soon....
+  
 ## Technology Stack
 
 - **Frontend**: React, Vite, Chart.js, Swiper
@@ -54,6 +54,17 @@ To set up the project locally, follow these steps:
 ## Usage
 
 To run the prototype locally and explore its features, use the following command:
+
+## Future Enhancements
+
+While the prototype is functional, there are several enhancements planned for the future:
+
+-Coal Emission Calculations: Integrate detailed algorithms to calculate emissions from various coal types, focusing on factors such as coal quality, burn efficiency, and emission control measures.
+-Coal Factory Enhancements: Develop modules to monitor and optimize emissions specifically from coal factories. This includes adding features for factory that helps predictive analytics for emission reduction, and best practices for clean coal technology.
+-User-Friendly Reporting: Create automated reporting tools that provide comprehensive insights into emissions data and sustainability metrics, making it easier for stakeholders to understand and act on the information.
+-Mobile Optimization: Enhance the application for mobile devices, ensuring a responsive design and intuitive user interface for on-the-go monitoring and management.
+-User Authentication: Introduce secure authentication and authorization mechanisms to ensure data privacy and controlled access to sensitive information.
+
 
 ```bash
 npm run dev
