@@ -25,9 +25,11 @@ EnviroMine provides mining companies with tools to monitor their environmental i
   
 ## Technology Stack
 
-- **Frontend**: React, Vite, Chart.js, Swiper
-- **Styling**: Material-UI (MUI), Styled-Components, Emotion
-- **Icons**: FontAwesome
+- **Frontend**: React, Vite, Chart.js, Swiper,Html
+- **Backend**: Express.js,Node.js
+- **DataBase**:MongoDb
+- **Styling**: Material-UI (MUI), Styled-Components,Css
+- **Icons**: FontAwesome,LordIcon
 
 ## Installation
 
@@ -55,6 +57,9 @@ To set up the project locally, follow these steps:
 
 To run the prototype locally and explore its features, use the following command:
 
+```bash
+npm run dev
+
 ## Future Enhancements
 
 While the prototype is functional, there are several enhancements planned for the future:
@@ -66,5 +71,4 @@ While the prototype is functional, there are several enhancements planned for th
 -User Authentication: Introduce secure authentication and authorization mechanisms to ensure data privacy and controlled access to sensitive information.
 
 
-```bash
-npm run dev
+
