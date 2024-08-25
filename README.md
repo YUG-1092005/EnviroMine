@@ -11,7 +11,6 @@ EnviroMine is a project aimed at leveraging technology to support sustainable mi
 - [Build](#build)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
