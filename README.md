@@ -59,16 +59,16 @@ To run the prototype locally and explore its features, use the following command
 
 ```bash
 npm run dev
+```
 
-## Future Enhancements
+## Future Goals
 
 While the prototype is functional, there are several enhancements planned for the future:
 
--Coal Emission Calculations: Integrate detailed algorithms to calculate emissions from various coal types, focusing on factors such as coal quality, burn efficiency, and emission control measures.
--Coal Factory Enhancements: Develop modules to monitor and optimize emissions specifically from coal factories. This includes adding features for factory that helps predictive analytics for emission reduction, and best practices for clean coal technology.
--User-Friendly Reporting: Create automated reporting tools that provide comprehensive insights into emissions data and sustainability metrics, making it easier for stakeholders to understand and act on the information.
--Mobile Optimization: Enhance the application for mobile devices, ensuring a responsive design and intuitive user interface for on-the-go monitoring and management.
--User Authentication: Introduce secure authentication and authorization mechanisms to ensure data privacy and controlled access to sensitive information.
-
+- **Coal Emission Calculations**: Integrate detailed algorithms to calculate emissions from various coal types, focusing on factors such as coal quality, burn efficiency, and emission control measures.
+- **Coal Factory Enhancements**: Develop modules to monitor and optimize emissions specifically from coal factories. This includes adding features for factory improvements, predictive analytics for emission reduction, and best practices for clean coal technology.
+- **User-Friendly Reporting**: Create automated reporting tools that provide comprehensive insights into emissions data and sustainability metrics, making it easier for stakeholders to understand and act on the information.
+- **Mobile Optimization**: Enhance the application for mobile devices, ensuring a responsive design and intuitive user interface for on-the-go monitoring and management.
+- **User Authentication**: Introduce secure authentication and authorization mechanisms to ensure data privacy and controlled access to sensitive information.
 
 
