@@ -51,3 +51,6 @@ To run the development server:
 
 ```bash
 npm run dev
+
+## Build
+npm run build
