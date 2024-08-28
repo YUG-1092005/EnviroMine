@@ -84,7 +84,7 @@ Our team is comprised of six members who are constantly working on EnviroMine. B
   - Created and designed the PowerPoint slides.
 - **Yash Mayurkumar Parekh**: Presentation Design
   - Edited and polished the final presentation.
-- **Vrusha Praka**: Content Research
+- **Vrusha Prakashkumar Patel**: Content Research
   - Gathered and analyzed relevant content.
 - **Zainab Tahir Padarwala**: Content Research
   - Compiled and organized content for the presentation.
