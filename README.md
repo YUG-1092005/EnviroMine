@@ -1,6 +1,6 @@
 # EnviroMine
 
-EnviroMine is a prototype aimed at leveraging technology to support sustainable mining practices. This project was developed as part of a hackathon to showcase innovative solutions for minimizing the environmental impact of mining operations.
+EnviroMine is a web-based application aimed at leveraging technology to support sustainable mining practices. This project is developed as part of a Smart India Hackathon to showcase innovative solutions for minimizing the environmental impact of mining operations.
 
 ## Table of Contents
 
@@ -70,5 +70,31 @@ While the prototype is functional, there are several enhancements planned for th
 - **User-Friendly Reporting**: Create automated reporting tools that provide comprehensive insights into emissions data and sustainability metrics, making it easier for stakeholders to understand and act on the information.
 - **Mobile Optimization**: Enhance the application for mobile devices, ensuring a responsive design and intuitive user interface for on-the-go monitoring and management.
 - **User Authentication**: Introduce secure authentication and authorization mechanisms to ensure data privacy and controlled access to sensitive information.
+
+## Contributors
+Our team is comprised of six members who are constantly working on EnviroMine. Below is an overview of each member's role and contributions:
+
+### Team Members and Roles
+
+- **Yug Nimesh Trivedi**: Prototype Development
+  - Developed core features of the prototype.
+- **Vrajkumar Shaileshbhai Parekh**: Prototype Development
+  - Developed Ai chatbot, refined and tested the prototype for accuracy.
+- **Vraj Ashokbhai Parekh**: Presentation Design
+  - Created and designed the PowerPoint slides.
+- **Yash Mayurkumar Parekh**: Presentation Design
+  - Edited and polished the final presentation.
+- **Vrusha Praka**: Content Research
+  - Gathered and analyzed relevant content.
+- **Zainab Tahir Padarwala**: Content Research
+  - Compiled and organized content for the presentation.
+
+We are actively progressing on these tasks and updating the project continuously. Stay tuned for more updates as we advance!
+
+
+
+
+
+
 
 
