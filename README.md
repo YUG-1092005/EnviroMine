@@ -82,7 +82,7 @@ Our team is comprised of six members who are constantly working on EnviroMine. B
   - Developed Ai chatbot, refined and tested the prototype for accuracy.
 - **Vraj Ashokbhai Parekh**: Presentation Design
   - Created and designed the PowerPoint slides.
-- **Yash Mayurkumar Parekh**: Presentation Design
+- **Yash Mayurkumar Soni**: Presentation Design
   - Edited and polished the final presentation.
 - **Vrusha Prakashkumar Patel**: Content Research
   - Gathered and analyzed relevant content.
