@@ -1,8 +1,38 @@
-@media screen and (max-width:609px) {
+/* Mobile-first layout for buttons */
+@media screen and (max-width: 609px) {
     .graph-btns {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
+
+    /* Add padding and make the buttons full width */
+    .graph-btns button {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Adjust form field layout */
+    .MuiFormControl-root {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* General button styling for all screen sizes */
+.graph-btns button {
+    background-color: #006400; /* Pitch green */
+    color: #fff; /* White text */
+    border: none;
+    cursor: pointer;
+}
+
+.graph-btns button:hover {
+    background-color: #004b2e; /* Darker shade of pitch green */
+}
+
+/* Add padding for form fields */
+.MuiFormControl-root {
+    margin-bottom: 1.5rem;
 }
