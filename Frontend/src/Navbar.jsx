@@ -47,6 +47,7 @@ const handleSidebar = () => {
           <Link to="/contactus">ContactUs</Link>
           <Link to="/signup" className="authenticate" onClick={handleSidebar}>SignUp</Link>
           <Link to="/login" className="authenticate" onClick={handleSidebar}>Login</Link>
+          <Link to="/enviromine/trustus"  onClick={handleSidebar}>Why trust us?</Link>
           <Link to="#"  onClick={handleSidebar}>ContactUs</Link>
         </div>
       </nav>

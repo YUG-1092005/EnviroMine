@@ -6,3 +6,60 @@
         gap: 1.5rem;
     }
 }
+
+.previous-button-container {
+    text-align: center;
+    /* margin-top: -45px; */
+  }
+  
+  .previous-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #459147;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .previous-button:hover {
+    background-color: #45a049;
+  }
+
+  .button-container-bs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 10px; 
+  }
+  
+  .button-bs {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .button-bs:hover {
+    background-color: #45a049; 
+  }
+  
+  @media (min-width: 600px) {
+    .button-container-bs {
+      flex-direction: row;
+    }
+    
+    .button-bs{
+      padding: 10px 25px;  
+      font-size: 18px;  
+    }
+  }
+  
+  

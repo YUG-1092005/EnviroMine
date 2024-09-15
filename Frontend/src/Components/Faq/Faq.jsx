@@ -169,6 +169,114 @@ export default function CustomizedAccordions() {
           </Accordion>
         </div>
       </div>
+      <div
+        style={{
+          marginBottom: "20px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <div style={{ width: "85%" }}>
+          <Accordion
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+          >
+            <AccordionSummary
+              aria-controls="panel4d-content"
+              id="panel4d-header"
+              style={{ height: "5rem" }}
+            >
+              <Typography style={{ fontSize: "1.5rem" }} className="faq-que">
+                How can I access real-time emission data?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={{ fontSize: "1.2rem", opacity: 0.8 }}>
+                Real-time emission data can be accessed through our dedicated
+                online platform, where you can view live metrics on emissions
+                from coal mining, electricity usage, and ventilation systems.
+                Our platform provides detailed reports and visualizations to
+                help you understand and monitor emission levels and also
+                suggesting you to plant trees in what number.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </div>
+
+      <div
+        style={{
+          marginBottom: "20px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <div style={{ width: "85%" }}>
+          <Accordion
+            expanded={expanded === "panel5"}
+            onChange={handleChange("panel5")}
+          >
+            <AccordionSummary
+              aria-controls="panel5d-content"
+              id="panel5d-header"
+              style={{ height: "5rem" }}
+            >
+              <Typography style={{ fontSize: "1.5rem" }} className="faq-que">
+                How do you handle feedback and complaints?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={{ fontSize: "1.2rem", opacity: 0.8 }}>
+                We value feedback from our stakeholders and are committed to
+                addressing any concerns or complaints promptly. You can provide
+                feedback through our online form, email, or directly to our
+                customer service team. We review all feedback carefully and take
+                appropriate actions to improve our practices and address any
+                issues.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </div>
+      <div
+        style={{
+          marginBottom: "20px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <div style={{ width: "85%" }}>
+          <Accordion
+            expanded={expanded === "panel6"}
+            onChange={handleChange("panel6")}
+          >
+            <AccordionSummary
+              aria-controls="panel6d-content"
+              id="panel6d-header"
+              style={{ height: "5rem" }}
+            >
+              <Typography style={{ fontSize: "1.5rem" }} className="faq-que">
+                How do you ensure safety and compliance in your operations?{" "}
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={{ fontSize: "1.2rem", opacity: 0.8 }}>
+                We adhere to strict safety and compliance standards set by
+                governmental and regulatory bodies. Our operations are regularly
+                inspected and audited to ensure that we meet safety requirements
+                and environmental regulations. We also implement comprehensive
+                safety training programs for our staff.{" "}
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </div>
       <div className="showcasing-join" style={{ marginTop: "6rem" }}>
         <h2 className="having-que">Having More Queries?</h2>
         <div className="join-content">

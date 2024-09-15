@@ -11,6 +11,7 @@ import Homepage from "./Components/Homepage/Homepage.jsx";
 import Signup from "./Components/Authentication/Signup.jsx";
 import Login from "./Components/Authentication/Login.jsx";
 import About from "./Components/About/About.jsx";
+import Trust from "./Components/Trust/trust.jsx"
 
 
 const AppRoutes = () => {
@@ -47,6 +48,7 @@ const AppRoutes = () => {
             <Route path="/environmine/calculation" element={<Calculator />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/enviromine/trustus" element={<Trust />} />
           </Routes>
         </>
       )}

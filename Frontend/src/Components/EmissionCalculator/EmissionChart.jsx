@@ -20,23 +20,32 @@ ChartJS.register(
 );
 
 const EmissionsChart = ({ emissionsData, type }) => {
+  const defaultIndividualData = [
+    0, 
+    0, 
+    0, 
+    0, 
+  ];
+
   const data = {
     labels:
-      type === "individual"
-        ? [
-            "Excavation Emissions",
-            "Total Transport Emissions",
-            "Total Electric Equipment Emissions",
-            "Per Capita Emissions",
-          ]
-        : ["Total Monthly Emissions"],
+    type === "individual"
+            ? [
+                "excavation",
+                "transport",
+                "electricity",
+                "ventilation",
+                "fugitive",
+                "perCapita",
+              ]
+            : ["Total Monthly Emissions"],
     datasets: [
       {
         label: "Emissions (kg CO₂)",
         data:
           type === "individual"
-            ? emissionsData.individual
-            : [emissionsData.total],
+            ? emissionsData.individual || defaultIndividualData
+            : [emissionsData.total || 0],
         backgroundColor: "rgba(75, 192, 192, 0.2)",
         borderColor: "rgba(75, 192, 192, 1)",
         borderWidth: 1,
@@ -54,8 +63,26 @@ const EmissionsChart = ({ emissionsData, type }) => {
       tooltip: {
         callbacks: {
           label: (context) => {
-            return `${context.dataset.label}: ${context.raw} kg CO₂`;
+            const value = context.raw || context.parsed?.y;
+            return `${context.dataset.label}: ${value} kg CO₂`;
           },
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          autoSkip: true,
+          maxRotation: 45,
+          minRotation: 0,
+        },
+        grid: {
+          display: false,
+        },
+      },
+      y: {
+        ticks: {
+          callback: (value) => `${value} kg CO₂`,
         },
       },
     },
@@ -69,7 +96,7 @@ const EmissionsChart = ({ emissionsData, type }) => {
         alignItems: "center",
         flexDirection: "column",
         width: "100%",
-        maxWidth: "800px",
+        maxWidth: "90%", 
         margin: "auto",
         padding: "20px",
       }}

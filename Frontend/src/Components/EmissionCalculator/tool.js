@@ -1,19 +1,30 @@
-export const excavatingTools = [
-    {name:"Dragline excavator",emissionFactor:0.5},
-    {name:"Sovel Loader",emissionFactor:0.3},
-    {name:"Bucket Wheel Excavator",emissionFactor:0.6},
-    {name:"Continuous Miner",emissionFactor:0.4},
-    {name:"Longwall Miner",emissionFactor:0.7},
-    {name:"Hydraulic Shovel",emissionFactor:0.45},
-    {name:"Drill Rig",emissionFactor:0.2},
-    {name:"Blasting Tools",emissionFactor:0.25}
+export const emissionFactor = [
+    {name:"Diesel" , emissonFactor:2.68},
+    {name:"Petrol" , emissonFactor:2.31},
+    {name:"NaturalGas" , emissonFactor:2.75},
+    {name: "Electric", emissonFactor: 0.3 }, 
+    {name:"Blasting" , emissonFactor:0.5},
 ]
 
-export const electricEquipment = [
-    { name: "Electric Drill", emissionFactor: 0.4 },// kg CO2 per kWh
-    { name: "Electric Generator", emissionFactor: 0.5 },  
-    { name: "Electric Pump", emissionFactor: 0.35 },  
-    { name: "Electric Compressor", emissionFactor: 0.45 },  
-    { name: "Electric Conveyor", emissionFactor: 0.3 }  
-  ];
-  
+export const transportEmissionFactors = [
+    {name:"Diesel" , emissonFactor:2.68},
+    {name:"Petrol" , emissonFactor:2.31},
+    {name:"NaturalGas" , emissonFactor:2.75},
+    {name: "Electric", emissonFactor: 0.3 }, 
+]
+export const electricitySource = [
+    { name: "coal", emissionFactor: 1.0 },         
+    { name: "naturalGas", emissionFactor: 0.7 },   
+    { name: "oil", emissionFactor: 0.8 },          
+    { name: "nuclear", emissionFactor: 0.02 },     
+    { name: "hydropower", emissionFactor: 0.005 }, 
+    { name: "wind", emissionFactor: 0.002 },       
+    { name: "solar", emissionFactor: 0.03 },       
+    { name: "another", emissionFactor: 0.5 }      
+];
+
+export const ventilation = [
+    { name: "powered", emissionFactor: 0.5 },         
+    { name: "natural", emissionFactor: 0.3 },   
+];
+
