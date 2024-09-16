@@ -96,6 +96,7 @@ const ExcavationForm = ({
               name="fuelConsumptionExcavation"
               value={data.fuelConsumptionExcavation}
               onChange={handleChange}
+              min={1}
             />
           </label>
           <label>
@@ -105,6 +106,7 @@ const ExcavationForm = ({
               name="operatingHours"
               value={data.operatingHours}
               onChange={handleChange}
+              min={1}
             />
           </label>
         </div>
@@ -121,10 +123,11 @@ const ExcavationForm = ({
           <label>
             Amount of coal extracted (tons):
             <input
-              type="text"
+              type="number"
               name="amountOfCoal"
               value={data.amountOfCoal}
               onChange={handleChange}
+              min={1}
             />
           </label>
         </div>
@@ -137,6 +140,7 @@ const ExcavationForm = ({
               name="explosives"
               value={data.explosives}
               onChange={handleChange}
+              min={1}
             />
           </label>
           <label>
@@ -146,6 +150,7 @@ const ExcavationForm = ({
               name="explosivesFrequency"
               value={data.explosivesFrequency}
               onChange={handleChange}
+              min={1}
             />
           </label>
         </div>

@@ -32,7 +32,7 @@ const Percapita = ({ totalEmissions, updateEmissions, handleNext }) => {
         <input
           type="number"
           value={population}
-          min="1" 
+          min={1}
           onChange={(e) => setPopulation(e.target.value)} 
         />
       </label>

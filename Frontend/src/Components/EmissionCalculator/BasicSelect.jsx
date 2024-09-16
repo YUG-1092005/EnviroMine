@@ -7,6 +7,7 @@ import FugitiveEmissions from "./Process.jsx";
 import Percapita from "./Percapita.jsx";
 import EmissionsChart from "./EmissionChart.jsx";
 import AfforestationChart from "./AfforestationChart.jsx";
+import Suggestions from "./suggestions.jsx";
 import "./BasicSelect.css";
 
 const BasicSelect = () => {
@@ -253,8 +254,15 @@ const BasicSelect = () => {
         />
       )}
       {showAfforestationChart && afforestationData && (
-        <AfforestationChart data={afforestationData} totalEmissions={totalEmissions}/>
-      )}
+  <>
+    <AfforestationChart data={afforestationData} totalEmissions={totalEmissions} />
+    <div className="suggestions-container">
+      <Suggestions formData={formData} />
+    </div>
+  </>
+)}
+
+      
     </div>
   );
 };

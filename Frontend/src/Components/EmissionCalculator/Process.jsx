@@ -51,6 +51,7 @@ const FugitiveEmissions = ({
           name="waterUsed"
           value={data.waterUsed}
           onChange={handleChange}
+          min={1}
         />
       </label>
       <label>
@@ -60,6 +61,7 @@ const FugitiveEmissions = ({
           name="fuelConsumption"
           value={data.fuelConsumption}
           onChange={handleChange}
+          min={1}
         />
       </label>
       <label>
@@ -69,6 +71,7 @@ const FugitiveEmissions = ({
           name="electricityUsed"
           value={data.electricityUsed}
           onChange={handleChange}
+          min={1}
         />
       </label>
       </div>

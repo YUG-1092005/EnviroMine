@@ -44,6 +44,7 @@ const ElectricityForm = ({
               name="electricityUsage"
               value={data.electricityUsage}
               onChange={handleChange}
+              min={1}
             />
           </label>
           <label>
@@ -73,6 +74,7 @@ const ElectricityForm = ({
               name="daysOperated"
               value={data.daysOperated}
               onChange={handleChange}
+              min={1}
             />
           </label>
         </div>

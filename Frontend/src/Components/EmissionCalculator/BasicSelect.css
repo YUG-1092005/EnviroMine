@@ -1,65 +1,93 @@
-@media screen and (max-width:609px) {
-    .graph-btns {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-}
-
-.previous-button-container {
-    text-align: center;
-    /* margin-top: -45px; */
-  }
-  
-  .previous-button {
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: #459147;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .previous-button:hover {
-    background-color: #45a049;
-  }
-
-  .button-container-bs {
+@media screen and (max-width: 609px) {
+  .graph-btns {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    gap: 10px; 
+    gap: 1.5rem;
   }
-  
+}
+
+.previous-button-container {
+  text-align: center;
+  /* margin-top: -45px; */
+}
+
+.previous-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #459147;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.previous-button:hover {
+  background-color: #45a049;
+}
+
+.button-container-bs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.button-bs {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-bs:hover {
+  background-color: #45a049;
+}
+
+@media (min-width: 600px) {
+  .button-container-bs {
+    flex-direction: row;
+  }
+
   .button-bs {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
+    padding: 10px 25px;
+    font-size: 18px;
   }
-  
-  .button-bs:hover {
-    background-color: #45a049; 
-  }
-  
-  @media (min-width: 600px) {
-    .button-container-bs {
-      flex-direction: row;
-    }
-    
-    .button-bs{
-      padding: 10px 25px;  
-      font-size: 18px;  
-    }
-  }
-  
-  
+}
+
+/* Suggestions Section */
+.suggestions-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.suggestions-container h3 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.suggestions-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.suggestions-container li {
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  color: #555;
+}

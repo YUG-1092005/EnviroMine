@@ -51,6 +51,7 @@ const TransportationForm = ({
               name="transportFuel"
               value={data.transportFuel}
               onChange={handleChange}
+              min={1}
             />
           </label>
         </div>
@@ -62,6 +63,7 @@ const TransportationForm = ({
               name="distanceTravelled"
               value={data.distanceTravelled}
               onChange={handleChange}
+              min={1}
             />
           </label>
           <label>
@@ -84,6 +86,7 @@ const TransportationForm = ({
               name="load"
               value={data.load}
               onChange={handleChange}
+              min={1}
             />
           </label>
           <label>
@@ -93,6 +96,7 @@ const TransportationForm = ({
               name="trips"
               value={data.trips}
               onChange={handleChange}
+              min={1}
             />
           </label>
         </div>

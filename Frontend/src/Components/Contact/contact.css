@@ -1,0 +1,99 @@
+.contact-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-table {
+    width: 100%;
+    background-color: #1B3F1C; 
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-table h1 {
+    font-size: 2.5rem;
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 20px;
+}
+
+.contact-section h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #1B3F1C; 
+}
+
+.contact-title {
+    color: #8BC34A; 
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+}
+
+.contact-section p.custom-paragraph {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333333;
+    line-height: 1.8;
+    text-align: justify;
+    border-left: 5px solid #1B3F1C;
+    background-color: #F9F9F9;
+}
+
+.contact-anchor {
+    color: #0000EE; 
+    text-decoration: none;
+}
+
+.contact-anchor:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #1B3F1C; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #145a32;
+}
+
+.confirmation-message {
+    display: none;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #d4edda; 
+    color: #155724; 
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}

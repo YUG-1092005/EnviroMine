@@ -44,11 +44,10 @@ const handleSidebar = () => {
           <Link to="/" onClick={handleSidebar}>Home</Link>
           <Link to="/aboutus" onClick={handleSidebar}>AboutUs</Link>
           <Link to="/environmine/calculation" onClick={handleSidebar}>Emission Calculation</Link>
-          <Link to="/contactus">ContactUs</Link>
           <Link to="/signup" className="authenticate" onClick={handleSidebar}>SignUp</Link>
           <Link to="/login" className="authenticate" onClick={handleSidebar}>Login</Link>
           <Link to="/enviromine/trustus"  onClick={handleSidebar}>Why trust us?</Link>
-          <Link to="#"  onClick={handleSidebar}>ContactUs</Link>
+          <Link to="/enviromine/contactus"  onClick={handleSidebar}>ContactUs</Link>
         </div>
       </nav>
     </div>

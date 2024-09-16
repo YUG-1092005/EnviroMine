@@ -50,6 +50,7 @@ const MineVentilation = ({
               name="daysOperatedVentilation"
               value={data.daysOperatedVentilation}
               onChange={handleChange}
+              min={1}
             />
           </label>
           <label>
@@ -59,6 +60,7 @@ const MineVentilation = ({
               name="ventilation"
               value={data.ventilation}
               onChange={handleChange}
+              min={1}
             />
           </label>
         </div>

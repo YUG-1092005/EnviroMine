@@ -19,7 +19,6 @@ const About = () => {
           <img src="/about_2.png" alt="aboutImage" className="about-img" />
         </div>
       </div>
-      {/* Mission and Values */}
       <div className="grid-container">
         <div className="card">
           <h2 className="card-title">Our Mission</h2>
@@ -39,7 +38,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Carbon Calculator Information */}
       <div className="info-section">
         <h2 className="section-title">About Our Carbon Calculator</h2>
         <p className="section-text">
@@ -70,7 +68,6 @@ const About = () => {
         </h3>
       </div>
 
-      {/* Contact Section */}
       <div className="contact-section">
         <h2 className="section-title">Contact Us</h2>
         <p className="section-text">
@@ -79,6 +76,7 @@ const About = () => {
         </p>
       </div>
     </div>
+    
   );
 };
 

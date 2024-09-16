@@ -7,6 +7,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,8 +30,8 @@ const Footer = () => {
         &copy; EnviroMine.
         </div>
       <div className="footer-links">
-        <a>Privacy Policy</a>
-        <a>Terms & Conditions</a>
+        <Link to={"/enviromine/privacypolicy"} style={{color:"black" , textDecoration:"none"}}>Privacy Policy</Link>
+        <Link to={"/enviromine/terms&conditions"} style={{color:"black" , textDecoration:"none"}}>Terms & Conditions</Link>
       </div>
     </div>
   );

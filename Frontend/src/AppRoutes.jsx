@@ -12,7 +12,9 @@ import Signup from "./Components/Authentication/Signup.jsx";
 import Login from "./Components/Authentication/Login.jsx";
 import About from "./Components/About/About.jsx";
 import Trust from "./Components/Trust/trust.jsx"
-
+import Contact from "./Components/Contact/contact.jsx";
+import Privacy from "./Components/FooterLinks/privacy.jsx";
+import Terms from "./Components/FooterLinks/terms.jsx";
 
 const AppRoutes = () => {
   const [loading, setLoading] = useState(false);
@@ -49,6 +51,9 @@ const AppRoutes = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/enviromine/trustus" element={<Trust />} />
+            <Route path="/enviromine/contactus" element={<Contact />} />
+            <Route path="/enviromine/privacypolicy" element={<Privacy />} />
+            <Route path="/enviromine/terms&conditions" element={<Terms />} />
           </Routes>
         </>
       )}
