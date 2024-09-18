@@ -42,6 +42,8 @@ const TransportationForm = ({
               name="vehicleType"
               value={data.vehicleType}
               onChange={handleChange}
+              required
+              placeholder="Truck"
             />
           </label>
           <label>
@@ -52,6 +54,7 @@ const TransportationForm = ({
               value={data.transportFuel}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
         </div>
@@ -64,11 +67,12 @@ const TransportationForm = ({
               value={data.distanceTravelled}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
           <label>
             Fuel Type:
-            <select name="fuel" value={data.fuel} onChange={handleChange}>
+            <select name="fuel" value={data.fuel} onChange={handleChange} required>
               <option>None</option>
               <option value="Petrol">Petrol</option>
               <option value="Diesel">Diesel</option>
@@ -87,6 +91,7 @@ const TransportationForm = ({
               value={data.load}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
           <label>
@@ -97,6 +102,7 @@ const TransportationForm = ({
               value={data.trips}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
         </div>

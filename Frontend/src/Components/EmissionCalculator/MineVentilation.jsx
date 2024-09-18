@@ -51,6 +51,7 @@ const MineVentilation = ({
               value={data.daysOperatedVentilation}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
           <label>
@@ -61,6 +62,7 @@ const MineVentilation = ({
               value={data.ventilation}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
         </div>
@@ -71,6 +73,7 @@ const MineVentilation = ({
               name="ventilationType"
               value={data.ventilationType}
               onChange={handleChange}
+              required
             >
               <option>None</option>
               <option value="natural">Natural</option>

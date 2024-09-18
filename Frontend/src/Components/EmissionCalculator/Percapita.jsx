@@ -12,12 +12,13 @@ const Percapita = ({ totalEmissions, updateEmissions, handleNext }) => {
       !isNaN(totalEmissions)
     ) {
       // Calculate per capita emissions
-      const emissions = totalEmissions / population; 
-      setPerCapitaEmissions(emissions); 
+      const emissions = totalEmissions / population;
+      setPerCapitaEmissions(emissions); // Update state
+      updateEmissions(emissions, "PerCapita Emissions"); // Use the calculated value directly
     } else {
-      setPerCapitaEmissions(0); 
+      setPerCapitaEmissions(0);
+      updateEmissions(0, "PerCapita Emissions");
     }
-    updateEmissions(perCapitaEmissions, "PerCapita Emissions");
   };
 
   console.log("pop", population);
@@ -34,6 +35,7 @@ const Percapita = ({ totalEmissions, updateEmissions, handleNext }) => {
           value={population}
           min={1}
           onChange={(e) => setPopulation(e.target.value)} 
+          required
         />
       </label>
       <div onClick={handleNext} className="btn-container">

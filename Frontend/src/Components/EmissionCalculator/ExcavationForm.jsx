@@ -70,6 +70,7 @@ const ExcavationForm = ({
               name="machineType"
               value={data.machineType}
               onChange={handleChange}
+              required
             />
           </label>
 
@@ -79,6 +80,7 @@ const ExcavationForm = ({
               name="typeOfFuel"
               value={data.typeOfFuel}
               onChange={handleChange}
+              required
             >
               <option>None</option>
               <option value="Petrol">Petrol</option>
@@ -97,6 +99,7 @@ const ExcavationForm = ({
               value={data.fuelConsumptionExcavation}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
           <label>
@@ -107,6 +110,7 @@ const ExcavationForm = ({
               value={data.operatingHours}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
         </div>
@@ -118,6 +122,7 @@ const ExcavationForm = ({
               name="typeOfCoal"
               value={data.typeOfCoal}
               onChange={handleChange}
+              required
             />
           </label>
           <label>
@@ -128,6 +133,7 @@ const ExcavationForm = ({
               value={data.amountOfCoal}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
         </div>
@@ -141,6 +147,7 @@ const ExcavationForm = ({
               value={data.explosives}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
           <label>
@@ -151,6 +158,7 @@ const ExcavationForm = ({
               value={data.explosivesFrequency}
               onChange={handleChange}
               min={1}
+              required
             />
           </label>
         </div>

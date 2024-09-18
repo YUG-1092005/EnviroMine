@@ -52,6 +52,7 @@ const FugitiveEmissions = ({
           value={data.waterUsed}
           onChange={handleChange}
           min={1}
+          required
         />
       </label>
       <label>
@@ -62,6 +63,7 @@ const FugitiveEmissions = ({
           value={data.fuelConsumption}
           onChange={handleChange}
           min={1}
+          required
         />
       </label>
       <label>
@@ -72,13 +74,14 @@ const FugitiveEmissions = ({
           value={data.electricityUsed}
           onChange={handleChange}
           min={1}
+          required
         />
       </label>
       </div>
       <div className="form-row-second">
       <label>
         Fuel Type:
-        <select name="fuelType" value={data.fuelType} onChange={handleChange}>
+        <select name="fuelType" value={data.fuelType} onChange={handleChange} required>
           <option>None</option>
           {emissionFactor.map((fuel) => (
             <option key={fuel.name} value={fuel.name}>
@@ -93,6 +96,7 @@ const FugitiveEmissions = ({
           name="electricityType"
           value={data.electricityType}
           onChange={handleChange}
+          required
         >
           <option>None</option>
           {electricitySource.map((source) => (

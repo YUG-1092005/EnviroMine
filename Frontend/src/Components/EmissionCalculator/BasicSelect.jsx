@@ -8,15 +8,17 @@ import Percapita from "./Percapita.jsx";
 import EmissionsChart from "./EmissionChart.jsx";
 import AfforestationChart from "./AfforestationChart.jsx";
 import Suggestions from "./suggestions.jsx";
+import Download from "../Download/Download.jsx";
 import "./BasicSelect.css";
 
 const BasicSelect = () => {
   const [currentStep, setCurrentStep] = useState(0);
+  const [download, setDownload] = useState(false);
   const [totalEmissions, setTotalEmissions] = useState(0);
   const [showIndividualChart, setShowIndividualChart] = useState(false);
   const [showTotalChart, setShowTotalChart] = useState(false);
-  const [showAfforestationChart, setShowAfforestationChart] = useState(false); 
-  const [afforestationData, setAfforestationData] = useState(null); 
+  const [showAfforestationChart, setShowAfforestationChart] = useState(false);
+  const [afforestationData, setAfforestationData] = useState(null);
   const [individualEmissions, setIndividualEmissions] = useState({
     excavation: 0,
     transport: 0,
@@ -59,11 +61,11 @@ const BasicSelect = () => {
     const sequestrationRate = 25; // avearge tons CO₂ per hectare per year
     const treesPerHectare = 500; // average Number of trees per hectare
 
-   const emissionsInTons = totalEmissions / 1000; // Convert kg to tons
+    const emissionsInTons = totalEmissions / 1000; // Convert kg to tons
 
-    const landRequired = emissionsInTons / sequestrationRate; 
-    const treesRequired = landRequired * treesPerHectare; 
-  
+    const landRequired = emissionsInTons / sequestrationRate;
+    const treesRequired = landRequired * treesPerHectare;
+
     setAfforestationData({ landRequired, treesRequired });
   };
 
@@ -73,6 +75,10 @@ const BasicSelect = () => {
     setShowAfforestationChart(true);
     setShowIndividualChart(false);
     setShowTotalChart(false);
+  };
+
+  const handleDownload = () => {
+    setDownload(!download);
   };
 
   const handleChange = (event) => {
@@ -237,6 +243,13 @@ const BasicSelect = () => {
               >
                 Afforestation Offsets
               </button>
+              <button
+                type="button"
+                onClick={handleDownload}
+                className="button-bs"
+              >
+                Download Report
+              </button>
             </div>
           )}
         </div>
@@ -254,15 +267,28 @@ const BasicSelect = () => {
         />
       )}
       {showAfforestationChart && afforestationData && (
-  <>
-    <AfforestationChart data={afforestationData} totalEmissions={totalEmissions} />
-    <div className="suggestions-container">
-      <Suggestions formData={formData} />
-    </div>
-  </>
-)}
-
-      
+        <>
+          <AfforestationChart
+            data={afforestationData}
+            totalEmissions={totalEmissions}
+          />
+          <div className="suggestions-container">
+            <Suggestions formData={formData} />
+          </div>
+        </>
+      )}
+      <div>
+      {download && (
+      <Download
+        download={download}
+        setDownload={setDownload}
+        formData={formData}
+        individualEmissions={individualEmissions}
+        totalEmissions={totalEmissions}
+        afforestationData={afforestationData}
+      />
+      )}
+      </div>
     </div>
   );
 };
